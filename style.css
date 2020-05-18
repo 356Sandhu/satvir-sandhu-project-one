@@ -206,7 +206,7 @@ header .wrapper .icons i {
 }
 
 
-.article-full h2, p {
+.article-full h2, .article-full p {
   margin-bottom: 1rem;
 }
 
@@ -269,7 +269,6 @@ footer{
   color: white;
   font-family: "Kanit", sans-serif;
   background-color: #6C0918;
-  height: 17rem;
   padding-top: 5rem;
 }
 
@@ -337,6 +336,7 @@ footer li{
 footer .copyright{
   text-align: center;
   height: 2.25rem;
+  margin-top: 2rem;
   padding-top: 0.25rem;
   background: #0B0101;
 }
@@ -479,6 +479,21 @@ footer .copyright p{
 
 /* Mobile Phones */
 @media only screen and (max-width: 576px) {
+
+  h1{
+    font-size: 4.25rem;
+    line-height: 4rem;
+  }
+
+  header{
+    background-position: 40% center;
+  }
+
+  header .wrapper .text {
+    bottom: 2rem
+  }
+
+
   .icons{
     display: none;
   }
@@ -493,12 +508,8 @@ footer .copyright p{
   }
 
   .news-articles .wrapper .image-grid{
-    margin: 0 0 5rem 0;
+    margin: 0 0 2rem 0;
 
-  }
-
-  .image-grid{
-    margin-bottom: 5rem;
   }
 
   .image-grid .img-wrapper {
@@ -587,6 +598,10 @@ footer .copyright p{
     padding: 3rem 0;
   }
 
+  footer{
+    padding-top: 3rem;
+  }
+
   footer .newsletter{
     float: none;
     margin: 0 auto;
@@ -606,21 +621,25 @@ footer .copyright p{
     float: none;
     width: 100%;
     padding-left: 0;
-    padding-bottom: 2rem;
   }
 
-  footer .right-footer p{
-    margin-bottom: 0;
+  footer .right-footer .footer-links{
+    width: 30%;
+  }
+
+  footer .right-footer .contact{
+    width: 70%;
   }
 
   footer .copyright{
-    height: auto;
-    padding: 0;
+    margin-top: 0rem;
   }
+}
 
-  footer .copyright p{
-    margin-bottom: 0;
+@media only screen and (max-width: 374px){
+  h1{
+    font-size: 3.25rem;
+    line-height: 3rem;
   }
-  
 }
 
