@@ -13,11 +13,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
-header {
-  background: url(./assets/image-1@2x.png) center no-repeat;
-  background-size: cover;
-  height: 80vh;
-}
 
 h1{
   font-family: "Kanit", sans-serif;
@@ -27,19 +22,17 @@ h1{
   color: #cc1d36;
 }
 
-
 h2 {
   font-family: 'Kanit', sans-serif;
-  font-size: 2.65rem;
+  font-size: 2.625rem;
 }
 
 p{
   font-family: 'Roboto';
   font-weight: 300;
   font-size: 1.25rem;
-  line-height: 1.9rem;
+  line-height: 1.8rem;
 }
-
 
 a {
   text-decoration: none;
@@ -48,7 +41,7 @@ a {
 button{
   font-family: 'Kanit', sans-serif;
   font-size: 1.25rem;
-  line-height: 1.9rem;
+  line-height: 1.8rem;
   border: none;
   color: white;
   
@@ -65,6 +58,12 @@ button{
   height: 100%;
   margin: 0 auto;
   position: relative;
+}
+
+header {
+  background: url(./assets/image-1@2x.png) center no-repeat;
+  background-size: cover;
+  height: 80vh;
 }
 
 header .wrapper nav {
@@ -88,14 +87,20 @@ header .wrapper nav .nav-left h2{
 
 header .wrapper nav .nav-right {
   float: right;
+}
+
+.header-navigation{
+  color: white;
+  margin: 0 1rem;
+  line-height: 1.8rem;
   font-family: "Catamaran", sans-serif;
 }
 
-header .wrapper nav .nav-right a {
+/* header .wrapper nav .nav-right a {
   color: white;
   margin: 0 1rem;
   line-height: 29px;
-}
+} */
 
 header .wrapper .text {
   position: absolute;
@@ -380,16 +385,100 @@ footer .copyright p{
 
   h1{
   font-size: 5.5rem;
-  
   }
 
-  .featured-article{
-    margin-bottom: 1rem;
+  .featured-article .img-wrapper{
+    padding-right: 1rem;
+  }
+
+  .featured-article .text{
+    float: none;
+    width: 100%;
+  }
+
+  
+
+  .article-full{
+    margin-bottom: 2rem;
+  }
+  
+
+  .article-full .article-left{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+  .article-full .article-right{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+
+  .article-full:nth-of-type(even) .article-right{
+   
+    padding-left: 0;
+    
+    width: 85%;
+    text-align: center;
+   
+  }
+
+  .article-full:nth-of-type(odd) .article-left{
+    padding-right: 0;
+    width: 85%;
+    text-align: center;
+  }
+
+  .article-full .read-more{
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .article-full p{
+    margin-top: 1rem;
+  }
+
+  footer .newsletter input{
+    float: left;
+    padding-left: 1rem;
+    height: 3rem;
+    width: 100%;
+    border: none;
+  }
+  
+  footer .newsletter button{
+    background-color: black;
+    float: left;
+    height: 3rem;
+    width: 100%;
+  }
+
+  footer .right-footer p{
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .wrapper{
+    width: 520px;
+  }
+
+  footer{
+    height: auto;
+  }
+  footer .wrapper{
+    padding-bottom: 2rem;
+  }
+
+  footer .copyright p{
+    margin-bottom: 0;
   }
 }
 
 /* Mobile Phones */
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 576px) {
   .icons{
     display: none;
   }
@@ -469,23 +558,6 @@ footer .copyright p{
     padding-right: 0;
   }
 
-  .article-full:nth-of-type(even) .article-right{
-    margin-top: 2rem;
-    padding-left: 0;
-    padding-right: calc((100vw - 1200px)/2);
-    width: 75%;
-    text-align: center;
-    padding-top: 0;
-  }
-
-  .article-full:nth-of-type(odd) .article-left{
-    margin-top: 2rem;
-    padding-right: 0;
-    padding-left: calc((100vw - 1200px)/2);
-    width: 75%;
-    text-align: center;
-    padding-top: 0;
-  }
 
   .article-full .read-more{
     margin-top: 2rem;
@@ -513,10 +585,6 @@ footer .copyright p{
 
   .icon:nth-of-type(2){
     padding: 3rem 0;
-  }
-
-  footer {
-    height: auto;
   }
 
   footer .newsletter{
@@ -555,3 +623,4 @@ footer .copyright p{
   }
   
 }
+
