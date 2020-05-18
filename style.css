@@ -19,6 +19,15 @@ header {
   height: 80vh;
 }
 
+h1{
+  font-family: "Kanit", sans-serif;
+  font-size: 7.25rem;
+  line-height: 6rem;
+  letter-spacing: 1px;
+  color: #cc1d36;
+}
+
+
 h2 {
   font-family: 'Kanit', sans-serif;
   font-size: 2.65rem;
@@ -94,13 +103,13 @@ header .wrapper .text {
   left: 0px;
 }
 
-header .wrapper .text h1 {
+/* header .wrapper .text h1 {
   font-family: "Kanit", sans-serif;
   font-size: 7.25rem;
   line-height: 6rem;
   letter-spacing: 1px;
   color: #cc1d36;
-}
+} */
 
 header .wrapper .text h1 span {
   display: block;
@@ -178,12 +187,10 @@ header .wrapper .icons i {
 .featured-article .text {
   width: 75%;
   float: right;
-
   height: 100%;
 }
 
 .featured-article .text h2 {
-
   text-align: left;
   margin: 0;
 }
@@ -193,6 +200,10 @@ header .wrapper .icons i {
   bottom: 0;
 }
 
+
+.article-full h2, p {
+  margin-bottom: 1rem;
+}
 
 .article-full .article-left{
   float: left;
@@ -219,7 +230,7 @@ header .wrapper .icons i {
 
 .article-full:nth-of-type(odd) .article-left{
   padding-left: calc((100vw - 1200px)/2);
-  padding-top: 10%;
+  padding-top: 5rem;
   padding-right: 5rem;
 }
 
@@ -227,8 +238,9 @@ header .wrapper .icons i {
   color: white;
   font-family: 'Kanit', sans-serif;
   height: 15rem;
-  background-image: url(./assets/oscar-aguilar-327500-unsplash@2x.png);
-  background-size: cover;
+  /* background-image: url(./assets/oscar-aguilar-327500-unsplash@2x.png); */
+  background-size: cover; 
+  background: url(./assets/oscar-aguilar-327500-unsplash@2x.png) no-repeat center; 
   text-align: center;
   padding-top: 5rem
 }
@@ -329,10 +341,55 @@ footer .copyright p{
 }
 
 
+/* Large Tablets */
+@media only screen and (max-width: 1200px){
+  .wrapper{
+    width: 950px;
+  }
 
+  h2 {
+    font-size: 2.5rem;
+  }
 
-/* Media Qeury for Mobile Devices */
-@media only screen and (max-width: 500px) {
+  p{
+    font-size: 1.15rem;
+    line-height: 1.75rem;
+  }
+
+  .featured-article .read-more{
+    position: relative;
+  }
+
+  .article-full:nth-of-type(even) .article-right{
+    padding-right: calc((100vw - 950px)/2);
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+  }
+
+  .article-full:nth-of-type(odd) .article-left{
+    padding-left: calc((100vw - 950px)/2);
+    padding-top: 2rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .wrapper{
+    width: 720px;
+  }
+
+  h1{
+  font-size: 5.5rem;
+  
+  }
+
+  .featured-article{
+    margin-bottom: 1rem;
+  }
+}
+
+/* Mobile Phones */
+@media only screen and (max-width: 575px) {
   .icons{
     display: none;
   }
@@ -418,6 +475,7 @@ footer .copyright p{
     padding-right: calc((100vw - 1200px)/2);
     width: 75%;
     text-align: center;
+    padding-top: 0;
   }
 
   .article-full:nth-of-type(odd) .article-left{
@@ -426,6 +484,7 @@ footer .copyright p{
     padding-left: calc((100vw - 1200px)/2);
     width: 75%;
     text-align: center;
+    padding-top: 0;
   }
 
   .article-full .read-more{
@@ -436,4 +495,63 @@ footer .copyright p{
   .article-full p{
     margin-top: 1rem;
   }
+
+  .quick-links{
+    height: auto;
+    padding-top: 1rem;
+    
+  }
+
+  .quick-links .wrapper{
+    padding: 3rem 0; 
+  }
+
+  .icon{
+    float: none;
+    width: 100%; 
+  }
+
+  .icon:nth-of-type(2){
+    padding: 3rem 0;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  footer .newsletter{
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .newsletter button,
+  footer .newsletter input {
+    float: none;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  footer .right-footer{
+    margin-top: 2rem;
+    float: none;
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 2rem;
+  }
+
+  footer .right-footer p{
+    margin-bottom: 0;
+  }
+
+  footer .copyright{
+    height: auto;
+    padding: 0;
+  }
+
+  footer .copyright p{
+    margin-bottom: 0;
+  }
+  
 }
