@@ -36,15 +36,18 @@ a {
   text-decoration: none;
 }
 
-.read-more {
+button{
   font-family: 'Kanit', sans-serif;
   font-size: 1.25rem;
   line-height: 1.9rem;
-  background-color: #CC1D36;
   border: none;
   color: white;
-  padding: 0.5rem 1rem;
+  
+}
 
+.read-more {
+  background-color: #CC1D36;
+  padding: 0.5rem 1rem;
 }
 
 .wrapper {
@@ -212,9 +215,11 @@ header .wrapper .icons i {
   padding-left: 5rem;
 }
 
+
+
 .article-full:nth-of-type(odd) .article-left{
   padding-left: calc((100vw - 1200px)/2);
-  padding-top: 5rem;
+  padding-top: 10%;
   padding-right: 5rem;
 }
 
@@ -243,14 +248,91 @@ header .wrapper .icons i {
 }
 
 
+footer{
+  color: white;
+  font-family: "Kanit", sans-serif;
+  background-color: #6C0918;
+  height: 17rem;
+  padding-top: 5rem;
+}
+
+footer h4{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+footer .newsletter{
+  float: left;
+  width: 50%;
+  /* padding-right: 10%; */
+}
+
+footer .newsletter form{
+  width: 100%;
+}
+
+footer .newsletter p{
+  margin-bottom: 0.5rem;
+}
+
+footer .newsletter input{
+  float: left;
+  padding-left: 1rem;
+  height: 3rem;
+  width: 75%;
+  border: none;
+}
+
+footer .newsletter button{
+  background-color: black;
+  float: left;
+  height: 3rem;
+  width: 25%;
+}
+
+footer .right-footer{
+  float: left;
+  width: 50%;
+  padding-left: 5%;
+}
+
+footer .right-footer .contact{
+  float: left;
+  width: 60%;
+}
+
+footer .right-footer .footer-links{
+  float: right;
+  width: 40%;
+  text-align: right;
+  
+}
+
+footer a{
+  color: white;
+  font-size: 1.25rem;
+}
+
+footer li{
+  margin-bottom: 0.5rem;
+}
+
+footer .copyright{
+  text-align: center;
+  height: 2.25rem;
+  padding-top: 0.25rem;
+  background: #0B0101;
+}
+
+footer .copyright p{
+  font-size: 1rem;
+}
 
 
 
 
-
-
-
-@media only screen and (max-width: 600px) {
+/* Media Qeury for Mobile Devices */
+@media only screen and (max-width: 500px) {
   .icons{
     display: none;
   }
