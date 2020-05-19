@@ -357,6 +357,18 @@ footer .copyright p{
 }
 
 
+@media only screen and (min-width: 1400px){
+  .article-full:nth-of-type(even) .article-right{
+    padding-top: 7.5rem;
+  }
+  
+  
+  
+  .article-full:nth-of-type(odd) .article-left{
+    padding-top: 7.5rem;
+  }
+}
+
 /* Large Tablets */
 @media only screen and (max-width: 1200px){
   .wrapper{
