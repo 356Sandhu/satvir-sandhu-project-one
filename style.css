@@ -646,8 +646,6 @@ footer .copyright p {
   font-size: 1rem;
 }
 
-
-
 @media only screen and (min-width: 1400px) {
   .article-full:nth-of-type(even) .article-right {
     padding-top: 7.5rem;
@@ -657,7 +655,7 @@ footer .copyright p {
     padding-top: 7.5rem;
   }
 
-  header .wrapper .icons{
+  header .wrapper .icons {
     display: block;
   }
 }
