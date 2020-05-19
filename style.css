@@ -431,9 +431,10 @@ header .wrapper .text p {
 }
 
 header .wrapper .icons {
+  display: none;
   position: absolute;
   bottom: 50px;
-  right: -200px;
+  right: -100px;
 }
 
 header .wrapper .icons i {
@@ -645,6 +646,8 @@ footer .copyright p {
   font-size: 1rem;
 }
 
+
+
 @media only screen and (min-width: 1400px) {
   .article-full:nth-of-type(even) .article-right {
     padding-top: 7.5rem;
@@ -652,6 +655,10 @@ footer .copyright p {
 
   .article-full:nth-of-type(odd) .article-left {
     padding-top: 7.5rem;
+  }
+
+  header .wrapper .icons{
+    display: block;
   }
 }
 
