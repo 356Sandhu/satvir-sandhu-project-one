@@ -15,28 +15,51 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a href="#skip-to" class="skip-link">Skip to main content.</a>
+    <nav>
+      <div class="hamburger-menu">
+        <input type="checkbox" class="hamburger">
+       <div class="burger">
+         <div class="patty1"></div>
+         <div class="patty2"></div>
+         <div class="patty3"></div>
+       </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#" class="header-navigation">HOME</a></li>
+            <li><a href="#" class="header-navigation">ABOUT</a></li>
+            <li><a href="#" class="header-navigation">BLOG</a></li>
+            <li><a href="#" class="header-navigation">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <header>
       <div class="wrapper">
         <nav class="clearfix">
 
           <div class="nav-left"><h2>DRIVE SOLO</h2></div>
           <div class="nav-right">
-            <a href="#" class="header-navigation">HOME</a>
-            <a href="#" class="header-navigation">ABOUT</a>
-            <a href="#" class="header-navigation">BLOG</a>
-            <a href="#" class="header-navigation">CONTACT</a>
+            <ul>
+              <li><a href="#" class="header-navigation">HOME</a></li>
+                <li><a href="#" class="header-navigation">ABOUT</a></li>
+                <li><a href="#" class="header-navigation">BLOG</a></li>
+                <li><a href="#" class="header-navigation">CONTACT</a></li>
+            </ul>
           </div>
+          
+
         </nav>
         <div class="text">
           <h1>DRIVE <span class="line2">SOLO</span></h1>
           <p>curated finest selection</p>
         </div>
-        <!-- <div class="icons clearfix">
+        <div class="icons clearfix">
           <i class="fab fa-instagram fa-2x"></i>
           <i class="fab fa-facebook-f fa-2x"></i>
           <i class="fab fa-snapchat-ghost fa-2x"></i>
           <i class="fab fa-twitter fa-2x"></i>
-        </div> -->
+        </div>
       </div>
     </header>
     <section class="news-articles">
@@ -53,14 +76,17 @@
             <img src="./assets/image-4@2x.png" alt="" />
           </div>
         </div>
-        <article class="featured-article clearfix">
+        <article class="featured-article clearfix" id="skip-to">
           <div class="img-wrapper">
             <img src="./assets/image-6@2x.png" alt="" />
           </div>
           <div class="text">
             <h2>THIS WEEKS HIGHLIGHTS</h2>
-            <p>
+            <p class="longer-body">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi facere architecto modi beatae deleniti nobis earum ullam nemo. Accusamus nesciunt illo exercitationem quam fuga doloribus ratione. Qui molestiae dignissimos ipsam beatae explicabo iure. Quae atque accusamus culpa odit nesciunt dignissimos, in quasi neque hic aliquam qui ullam placeat sequi quo molestias nihil sapiente labore sint. Qui maiores assumenda sit quas error quae ipsum dolorum accusantium.
+            </p>
+            <p class="shorter-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi facere architecto modi beatae deleniti nobis earum ullam nemo. Accusamus nesciunt illo exercitationem quam fuga doloribus ratione...
             </p>
             <button class="read-more featured-read">READ MORE</button>
           </div>
